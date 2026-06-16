@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Syed Nassar — Contact</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header id="top-header">
+    <div class="nav-brand">SN</div>
+    <nav class="top-navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <span class="section-label">04 — Contact</span>
+      <h1>Let's Talk</h1>
+    </div>
+  </div>
+
+  <!-- CONTACT CONTENT -->
+  <section class="section section-alt">
+    <div class="section-inner contact-inner">
+      <p class="contact-lead">Have a project in mind? I'd love to hear about it.</p>
+
+      <!-- Contact Cards -->
+      <div class="contact-cards">
+        <div class="contact-card">
+          <span class="contact-icon">✉</span>
+          <strong>Email</strong>
+          <a href="mailto:nassarbinnasir@gmail.com">nassarbinnasir@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">⌘</span>
+          <strong>GitHub</strong>
+          <a href="https://github.com/SyedNassar" target="_blank">github.com/SyedNassar</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">◈</span>
+          <strong>LinkedIn</strong>
+          <a href="https://www.linkedin.com/in/syednassar/" target="_blank">linkedin.com/in/syednassar</a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap">
+        <h3>Send a Message</h3>
+        <div class="form-group">
+          <label for="name">Syed Nassar Bin Nasir</label>
+          <input type="text" id="name" placeholder="Nassar"/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="nassarbinnasir@gmail.com"/>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="btn-primary btn-full" onclick="handleFormSubmit()">Send Message →</button>
+        <p id="form-msg" class="form-success" style="display:none;">✓ Message sent! I'll get back to you soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="bottom-footer">
+    <nav class="bottom-navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Syed Nassar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleFormSubmit() {
+      const msg = document.getElementById('form-msg');
+      msg.style.display = 'block';
+      setTimeout(() => msg.style.display = 'none', 4000);
+    }
+  </script>
+
+</body>
+</html>
